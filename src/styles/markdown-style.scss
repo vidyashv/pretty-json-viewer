@@ -1,0 +1,71 @@
+@import "~carbon-components/scss/components/code-snippet/_code-snippet.scss";
+@import "~carbon-components/scss/components/list/_list.scss";
+@import "~carbon-components/scss/components/data-table/_data-table.scss";
+.api-documentation-spacing {
+  margin-bottom: 2rem;
+}
+
+.api-documentation {
+  h1,
+  h2,
+  h3 {
+    font-size: 1.25rem;
+    line-height: 2.25rem;
+    letter-spacing: 0px;
+  }
+
+  a {
+    word-break: break-word;
+  }
+  pre {
+    @extend .bx--snippet;
+    @extend .bx--snippet--multi;
+    line-height: 2rem;
+    white-space: pre-wrap;
+    overflow-x: auto;
+  }
+
+  :not(pre) > code {
+    @extend .bx--snippet;
+    @extend .bx--snippet--inline;
+    line-height: 2rem;
+    white-space: pre-wrap;
+  }
+
+  li {
+    margin-bottom: 0.25rem;
+    padding-left: 0rem;
+  }
+
+  ol,
+  ul {
+    padding: 0 0 15px;
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.625rem;
+    border: 0;
+  }
+
+  ol > li {
+    margin-left: 2rem;
+    list-style: decimal;
+  }
+  ul > li {
+    margin-left: 2rem;
+    list-style: disc;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  table ul > li {
+    margin-left: 0;
+  }
+  table {
+    @extend .bx--data-table;
+    th {
+      @extend .bx--table-header-label;
+    }
+  }
+}

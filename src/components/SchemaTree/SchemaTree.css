@@ -1,0 +1,8 @@
+li:last-child{
+  border-bottom: 0;
+}
+
+.align-drop-middle{
+  display: flex;
+  flex-direction: row;
+}

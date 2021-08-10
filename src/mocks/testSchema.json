@@ -1,0 +1,28 @@
+{
+    "required": [
+      "workflow_id"
+    ],
+    "type": "object",
+    "properties": {
+      "workflow_id": {
+        "type": "string",
+        "description": "ID of workflow that contains the step",
+        "example": 1260
+      },
+      "name": {
+        "type": "string",
+        "description": "The name of the step",
+        "example": "transfer step"
+      },
+      "action_order": {
+        "description": "Order of actions in a step, listed by action ID",
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "example": [
+          "1273, 1262, 1274"
+        ]
+      }
+    }
+  }
